@@ -1,0 +1,9 @@
+---
+name: cloudslang
+description: CloudSlang integrations to operate cloudslang.
+keywords:
+  - cloudslang
+  - workflows
+version: 0.0.1
+author: orius123
+email: support@cloudslang.io

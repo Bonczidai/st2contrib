@@ -1,0 +1,21 @@
+---
+description: Clean docker un-used images
+enabled: true
+name: clear_docker_images
+pack: cloudslang
+runner_type: "cloudslang"
+entry_point: "/opt/cslang/content/io/cloudslang/docker/images/clear_unused_images.sl"
+
+parameters:
+  docker_host:
+    description: "Docker machine host"
+    type: string
+  docker_username:
+    description: "Docker machine username"
+    type: string
+  docker_password:
+    description: "Docker machine password"
+    type: string
+  private_key_file:
+    description: "Path to the private key file (instead of machine password)"
+    type: string

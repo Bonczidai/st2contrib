@@ -1,0 +1,13 @@
+---
+description: Run print text flow
+enabled: true
+name: print_text
+pack: cloudslang
+runner_type: "cloudslang"
+entry_point: "/opt/cslang/content/io/cloudslang/base/print/print_text.sl"
+
+parameters:
+  text:
+    description: "Text to print to the console"
+    type: string
+
