@@ -1,0 +1,24 @@
+---
+description: Run demo_containers (swarm) flow
+enabled: true
+name: swarm_demo_containers
+pack: cloudslang
+runner_type: "cloudslang"
+entry_point: "/opt/stackstorm/packs/cloudslang/lib/content/io/cloudslang/docker/swarm/examples/demo_containers.sl"
+
+parameters:
+  swarm_manager_ip:
+    description: "IP address of the machine with the Swarm manager container"
+    type: string
+  swarm_manager_port:
+    description: "port used by the Swarm manager container"
+    type: string
+  host:
+    description: "Docker machine host"
+    type: string
+  username:
+    description: "Docker machine username"
+    type: string
+  private_key_file:
+    description: "path to private key file"
+    type: string
